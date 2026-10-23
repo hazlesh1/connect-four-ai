@@ -112,7 +112,6 @@ class ConnectFourAI(TwoPlayerGame):
         return ConnectFourAI(self.board, self.current_player)
 
     def scoring(self):
-        # Score the position for the player whose turn it is in the search.
         player = self.current_player
         opponent = 3 - player
         winner = get_winner(self.board)
